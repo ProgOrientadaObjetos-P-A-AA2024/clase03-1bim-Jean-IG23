@@ -7,16 +7,29 @@ package paquete2;
 
 import paquete1.InstitucionEducativa;
 
-/**
- *
- * @author reroes
- */
 public class Principal {
     public static void main(String[] args) {
-        /*Un objeto de tipo InstitucionEducativa*/
         
-        InstitucionEducativa i1 = new InstitucionEducativa();
+        InstitucionEducativa ie = new InstitucionEducativa();
         
-        // System.out.printf("%s     ", i1.);
+        String n = "Jean Iñiguez";
+        String ti = "Privada";
+        int na = 30;
+        int nd = 1;
+        int ns = 2;
+        
+        ie.establecerNombre(n);
+        ie.establecerTipoInstitucion(ti);
+        ie.establecerNumeroAlumnos(na);
+        ie.establecerNumeroDocentes(nd);
+        ie.establecerNumeroSedes(ns);
+        
+        
+        System.out.printf("Informacion\n\nNombre y Apellido: %s\nTipo de Institución: %s\n"
+        + "Numero de Alumnos: %d\n"
+        + "Numero de Docentes: %d\n"
+        + "Numero de Sedes: %d\n", ie.obtenerNombre(), ie.obtenerTipoInstitucion(), ie.obtenerNumeroAlumnos(),
+        ie.obtenerNumeroDocentes(), ie.obtenerNumeroSedes());
+        
     }
 }
