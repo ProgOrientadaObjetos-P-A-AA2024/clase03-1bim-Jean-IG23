@@ -20,7 +20,10 @@ public class Ejecutable02 {
         h1.establecerNombre("Vaca Ortíz");
         h2.establecerNombre("Militar");
         h3.establecerNombre("Manuel IM");
-        
+        /* 
+        el System en este caso lo q hace es presentar los valores asignados, en el caso de h1.obtenerNumeroCamas va a dar 0 ya que no se le asigna ningun valor por lo cual presenta su valor por defecto o null que es en 
+        este caso es 0 igualnmente en el caso del h1.obtenerPresupuesto 
+        */
         System.out.printf("%s - %d - %.2f\n", h1.obtenerNombre(),
                 h1.obtenerNumeroCamas(), h1.obtenerPresupuesto());
         /*
